@@ -1,8 +1,8 @@
-from __future__ import print_function
-from facedetector import FaceDetector
-
 import argparse
 import cv2
+
+from __future__ import print_function
+from facedetector import FaceDetector
 
 # setup the command line arguments
 ap = argparse.ArgumentParser()
