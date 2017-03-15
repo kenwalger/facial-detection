@@ -161,4 +161,4 @@ fabric.properties
 
 # Personalized images
 
-/images/
+/images/*.*
