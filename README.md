@@ -9,6 +9,27 @@ classifier
 #
 Useage
 
-`python detect_faces.py --face cascade/haarcascade_frontalface_default.xml 
+Static Images  
+`python picture_facial_detection.py --face 
+cascades/haarcascade_frontalface_default
+.xml 
 --image images/single.jpg`
+#  
+  
+Video Images:
+
+With computer camera:  
+
+`python video_facial_detection.py --face 
+cascades/haarcascade_frontalface_default.xml`
+
+To process an existing video file:  
+
+`python video_facial_detection.py --face 
+cascades/haarcascade_frontalface_default.xml --video <path to video file>`
+
+
+
+
+
 
