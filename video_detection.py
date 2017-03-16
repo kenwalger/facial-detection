@@ -51,7 +51,7 @@ while True:
         cv2.rectangle(frame_clone,
                       (fX, fY),
                       (fX + fW, fY + fH),
-                      config.BOX_COLOR,
+                      config.GREEN_BOX,
                       config.LINE_THICKNESS)
 
     # Show off our work to the world
