@@ -15,10 +15,10 @@ class FaceDetector:
         :param minSize: width and height of the window size
         :return: List of tuples of the bounding boxes of the face image
         """
-        rects = self.faceCascade.detectMultiScale(image,
-                                                  scaleFactor=scaleFactor,
-                                                  minNeighbors=minNeighbors,
-                                                  minSize=minSize,
-                                                  flags=cv2.CASCADE_SCALE_IMAGE)
+        rectangle = self.faceCascade.detectMultiScale(image,
+                                                      scaleFactor=scaleFactor,
+                                                      minNeighbors=minNeighbors,
+                                                      minSize=minSize,
+                                                      flags=cv2.CASCADE_SCALE_IMAGE)
 
-        return rects
+        return rectangle
