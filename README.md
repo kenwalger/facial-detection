@@ -6,10 +6,11 @@ Presented at Boise Code Camp
 
 This project uses, and includes, the [haarcascade_frontalface_default](https://github.com/opencv/opencv/blob/master/data/haarcascades/haarcascade_frontalface_default.xml) 
 classifier
-#
-Useage
 
-Static Images  
+Useage
+==  
+
+Static Images:  
 `python picture_facial_detection.py --face 
 cascades/haarcascade_frontalface_default
 .xml 
