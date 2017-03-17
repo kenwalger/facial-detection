@@ -7,9 +7,13 @@ import imutils
 
 # setup the argument parse for command line inputs
 parser = argparse.ArgumentParser()
-parser.add_argument("-f", "--face", required=True,
+parser.add_argument("-f",
+                    "--face",
+                    required=True,
                     help="path to face cascade classifier ")
-parser.add_argument("-v", "--video", help="path to video (optional)")
+parser.add_argument("-v",
+                    "--video",
+                    help="path to video (optional)")
 
 arguments = vars(parser.parse_args())
 
@@ -31,7 +35,7 @@ while True:
     if arguments.get("video") and not grabbed:
         break
 
-    # resize the frame to 300 pixels in width
+    # resize the frame to 300 pixels in width, for performance
     frame = imutils.resize(frame, width=300)
     # convert the frame to gray scale for processing
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
